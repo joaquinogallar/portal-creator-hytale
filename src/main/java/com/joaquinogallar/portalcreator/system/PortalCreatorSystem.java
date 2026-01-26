@@ -32,6 +32,16 @@ public class PortalCreatorSystem extends EntityTickingSystem<EntityStore> {
         return true;
     }
 
+    public static boolean removePortal(String name) {
+        for (Portal p : portals) {
+            if(p.name().equals(name)) {
+                portals.remove(p);
+                return true;
+            }
+        }
+        return false;
+    }
+
     @Override
     public void tick(float v, int i,
                      @Nonnull ArchetypeChunk<EntityStore> archetypeChunk,
