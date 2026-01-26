@@ -9,5 +9,6 @@ public class PortalCreatorCommandCollection extends AbstractCommandCollection {
         super(name, description);
 
         this.addSubCommand(new CreatePortalCommand("create", "Create a portal", true));
+        this.addSubCommand(new DeletePortalCommand("delete", "Delete a portal", true));
     }
 }
