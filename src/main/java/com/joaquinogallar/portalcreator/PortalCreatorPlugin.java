@@ -2,7 +2,7 @@ package com.joaquinogallar.portalcreator;
 
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
-import com.joaquinogallar.portalcreator.commands.PortalCreatorCommandCollection;
+import com.joaquinogallar.portalcreator.command.PortalCreatorCommandCollection;
 
 import javax.annotation.Nonnull;
 

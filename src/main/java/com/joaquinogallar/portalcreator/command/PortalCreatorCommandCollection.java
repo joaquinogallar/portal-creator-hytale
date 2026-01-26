@@ -1,4 +1,4 @@
-package com.joaquinogallar.portalcreator.commands;
+package com.joaquinogallar.portalcreator.command;
 
 import com.hypixel.hytale.server.core.command.system.basecommands.AbstractCommandCollection;
 
