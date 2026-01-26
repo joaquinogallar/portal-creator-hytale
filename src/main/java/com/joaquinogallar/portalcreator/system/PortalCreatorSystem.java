@@ -42,6 +42,10 @@ public class PortalCreatorSystem extends EntityTickingSystem<EntityStore> {
         return false;
     }
 
+    public static List<String> getPortalNames() {
+        return portals.stream().map(Portal::name).toList();
+    }
+
     @Override
     public void tick(float v, int i,
                      @Nonnull ArchetypeChunk<EntityStore> archetypeChunk,
