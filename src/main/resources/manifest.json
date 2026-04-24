@@ -1,0 +1,6 @@
+{
+  "Group": "com.joaquinogallar",
+  "Name": "Portal Creator Plugin",
+  "Version": "1.0.0",
+  "Main": "com.joaquinogallar.portalcreator.PortalCreatorPlugin"
+}

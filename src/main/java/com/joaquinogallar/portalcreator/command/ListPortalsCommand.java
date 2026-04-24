@@ -25,8 +25,8 @@ public class ListPortalsCommand extends AbstractPlayerCommand {
             @Nonnull PlayerRef playerRef,
             @Nonnull World world) {
 
-        Message.raw("Portals list:");
-        PortalCreatorSystem.getPortalNames().forEach(Message::raw);
+        commandContext.sendMessage(Message.raw("Portals list:"));
+        PortalCreatorSystem.getPortalNames().forEach(name -> commandContext.sendMessage(Message.raw(name)));
         commandContext.sendMessage(Message.raw("================================"));
     }
 }

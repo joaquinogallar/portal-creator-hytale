@@ -6,6 +6,7 @@ import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.component.query.Query;
 import com.hypixel.hytale.component.system.tick.EntityTickingSystem;
+import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.math.vector.Vector3d;
 import com.hypixel.hytale.server.core.modules.entity.component.TransformComponent;
 import com.hypixel.hytale.server.core.modules.entity.teleport.Teleport;
@@ -21,6 +22,7 @@ import java.util.List;
 public class PortalCreatorSystem extends EntityTickingSystem<EntityStore> {
 
     private static final List<Portal> portals = new ArrayList<>();
+    private static final HytaleLogger logger = HytaleLogger.getLogger();
 
     public static boolean addPortal(String name, Vector3d p1, Vector3d p2, Vector3d destination) {
         for (Portal p : portals) {
